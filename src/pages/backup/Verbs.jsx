@@ -4,7 +4,7 @@ import { Search, Filter } from 'lucide-react';
 import { verbs } from '../data/verbsData';
 import './Verbs.css';
 
-const LEVELS = ['All', 'A1', 'A2', 'B1', 'B2', 'B2+', 'C1', 'C2'];
+const LEVELS = ['All', 'B2', 'B2+', 'C1', 'C2'];
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
 export default function Verbs() {
@@ -23,13 +23,10 @@ export default function Verbs() {
   }, [search, level, letter]);
 
   const levelColors = {
-    'A1':  'level-a1',
-    'A2':  'level-a2',
-    'B1':  'level-b1',
-    'B2':  'level-b2',
+    'B2': 'level-b2',
     'B2+': 'level-b2plus',
-    'C1':  'level-c1',
-    'C2':  'level-c2',
+    'C1': 'level-c1',
+    'C2': 'level-c2',
   };
 
   return (
@@ -37,7 +34,7 @@ export default function Verbs() {
       <div className="verbs-header">
         <h1 className="verbs-title">Verbs & Meanings</h1>
         <p className="verbs-subtitle">
-          {verbs.length} verbs from A1 to C2 — click any verb to learn more
+          {verbs.length} verbs from B2 to C2 — click any verb to learn more
         </p>
       </div>
 

@@ -381,7 +381,7 @@ export const verbs = [
   { "verb": "warn", "translation": "avisar, alertar", "level": "B1" },
   { "verb": "wonder", "translation": "se perguntar, se questionar", "level": "B1" },
   { "verb": "work out", "translation": "resolver, se exercitar", "level": "B1" },
-  { "verb": "worry", "translation": "se preocupar", "level": "B1" },
+  { "verb": "worry", "translation": "se preocupar", "level": "B1" }
 
   {
     "verb": "be",
