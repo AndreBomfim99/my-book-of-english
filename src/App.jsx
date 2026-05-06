@@ -6,6 +6,7 @@ import Units from './pages/Units';
 import Verbs from './pages/Verbs';
 import VerbDetail from './pages/VerbDetail';
 import Games from './pages/Games';
+import Structures from './pages/Structures';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/verbs" element={<Verbs />} />
           <Route path="/verbs/:verbName" element={<VerbDetail />} />
           <Route path="/games" element={<Games />} />
+          <Route path="/structures" element={<Structures />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

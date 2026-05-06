@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, Languages, Gamepad2, ArrowRight } from 'lucide-react';
+import { BookOpen, Languages, Gamepad2, ArrowRight, BookMarked} from 'lucide-react';
 import './Home.css';
 
 const cards = [
@@ -15,6 +15,12 @@ const cards = [
     icon: <Languages size={24} />,
     title: 'Verbs & Meanings',
     description: 'The 300 most frequent English verbs with translations and examples.',
+  },
+  {
+    to: '/structures',
+    icon: <BookMarked size={24} />,
+    title: 'Structures',
+    description: 'Learn essential English sentence structures and patterns for every level.',
   },
   {
     to: '/games',

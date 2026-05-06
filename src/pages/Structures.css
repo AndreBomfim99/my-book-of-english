@@ -1,0 +1,235 @@
+.structures-page {
+  padding-top: 80px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 80px;
+}
+
+.structures-header {
+  text-align: center;
+  padding: 48px 0 40px;
+}
+
+.structures-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.structures-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+/* LIST */
+.structures-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ITEM */
+.structure-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s;
+}
+
+.structure-item.open {
+  border-color: var(--accent);
+}
+
+/* HEADER BUTTON */
+.structure-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.structure-header:hover {
+  background: var(--accent-light);
+}
+
+.structure-item.open .structure-header {
+  background: var(--accent-light);
+  border-bottom: 1px solid var(--border);
+}
+
+.structure-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  min-width: 0;
+}
+
+.structure-number {
+  width: 32px;
+  height: 32px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.structure-titles {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.structure-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.structure-sub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.structure-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.structure-formula {
+  font-size: 0.78rem;
+  background: var(--bg-primary);
+  color: var(--accent);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-family: monospace;
+  max-width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .structure-formula {
+    display: none;
+  }
+}
+
+.structure-chevron {
+  font-size: 0.7rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* CONTENT */
+.structure-content {
+  padding: 24px 28px 28px;
+}
+
+.structure-example {
+  border-left: 3px solid var(--accent);
+  padding: 12px 18px;
+  background: var(--accent-light);
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+/* PROSE */
+.structure-prose {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.structure-prose h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 20px 0 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.structure-prose h3:first-child {
+  margin-top: 0;
+}
+
+.structure-prose p {
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+}
+
+.structure-prose ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.structure-prose ul li {
+  padding: 8px 14px;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent);
+  font-size: 0.9rem;
+}
+
+.structure-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+}
+
+.structure-prose table th {
+  background: var(--accent-light);
+  color: var(--accent);
+  font-weight: 700;
+  padding: 10px 14px;
+  text-align: left;
+  border: 1px solid var(--border);
+}
+
+.structure-prose table td {
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.structure-prose table tr:nth-child(even) td {
+  background: var(--bg-primary);
+}
+
+.structure-prose strong {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.structure-prose em {
+  font-style: italic;
+  color: var(--text-secondary);
+}

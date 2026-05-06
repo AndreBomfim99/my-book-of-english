@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { BookOpen, Languages, Gamepad2, Sun, Moon } from 'lucide-react';
+import { BookOpen, Languages, Gamepad2, Sun, Moon, BookMarked} from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import './Navbar.css';
 
@@ -11,6 +11,7 @@ export default function Navbar() {
   const links = [
     { to: '/units', label: 'Units', icon: <BookOpen size={16} /> },
     { to: '/verbs', label: 'Verbs', icon: <Languages size={16} /> },
+    { to: '/structures', label: 'Structures', icon: <BookMarked size={16} /> },
     { to: '/games', label: 'Games', icon: <Gamepad2 size={16} /> },
   ];
 
