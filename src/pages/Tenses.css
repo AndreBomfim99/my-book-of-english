@@ -1,0 +1,119 @@
+.tenses-page {
+  padding-top: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 80px;
+}
+
+.tenses-header {
+  text-align: center;
+  padding: 48px 0 40px;
+}
+
+.tenses-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.tenses-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+/* CATEGORIES GRID */
+.tenses-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* CATEGORY CARD */
+.tense-category {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.tense-category-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 24px;
+  background: var(--accent-light);
+  border-bottom: 1px solid var(--border);
+}
+
+.tense-category-number {
+  width: 32px;
+  height: 32px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.tense-category-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--text-primary);
+}
+
+/* ITEMS LIST */
+.tense-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.tense-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+  transition: all 0.18s ease;
+}
+
+.tense-item:last-child {
+  border-bottom: none;
+}
+
+.tense-item:hover {
+  background: var(--accent-light);
+  padding-left: 30px;
+}
+
+.tense-item-number {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: monospace;
+  min-width: 30px;
+}
+
+.tense-item-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.tense-item-arrow {
+  color: var(--accent);
+  flex-shrink: 0;
+  transition: transform 0.18s ease;
+}
+
+.tense-item:hover .tense-item-arrow {
+  transform: translateX(3px);
+}

@@ -7,6 +7,8 @@ import Verbs from './pages/Verbs';
 import VerbDetail from './pages/VerbDetail';
 import Games from './pages/Games';
 import Structures from './pages/Structures';
+import Tenses from './pages/Tenses';
+import TenseDetail from './pages/TenseDetail';
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
           <Route path="/verbs/:verbName" element={<VerbDetail />} />
           <Route path="/games" element={<Games />} />
           <Route path="/structures" element={<Structures />} />
+          <Route path="/tenses" element={<Tenses />} />
+          <Route path="/tenses/:tenseId" element={<TenseDetail />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
