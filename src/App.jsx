@@ -9,6 +9,7 @@ import Games from './pages/Games';
 import Structures from './pages/Structures';
 import Tenses from './pages/Tenses';
 import TenseDetail from './pages/TenseDetail';
+import UnitDetail from './pages/UnitDetail';
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/structures" element={<Structures />} />
           <Route path="/tenses" element={<Tenses />} />
           <Route path="/tenses/:tenseId" element={<TenseDetail />} />
+          <Route path="/units/:unitId" element={<UnitDetail />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

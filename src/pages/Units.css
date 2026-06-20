@@ -1,0 +1,92 @@
+.units-page {
+  padding-top: 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 80px;
+}
+
+.units-header {
+  text-align: center;
+  padding: 48px 0 40px;
+}
+
+.units-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.units-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+/* VERTICAL LIST — one card below the other */
+.units-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.unit-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 26px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: all 0.2s ease;
+  color: var(--text-primary);
+}
+
+.unit-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.unit-number {
+  width: 36px;
+  height: 36px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.unit-texts {
+  flex: 1;
+  min-width: 0;
+}
+
+.unit-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.unit-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.unit-arrow {
+  color: var(--accent);
+  flex-shrink: 0;
+  transition: transform 0.18s ease;
+}
+
+.unit-card:hover .unit-arrow {
+  transform: translateX(3px);
+}
