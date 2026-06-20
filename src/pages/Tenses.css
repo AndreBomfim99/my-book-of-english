@@ -117,3 +117,47 @@
 .tense-item:hover .tense-item-arrow {
   transform: translateX(3px);
 }
+
+/* HOW TO CHOOSE GUIDE CARD */
+.tense-guide-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 24px;
+  padding: 24px 28px;
+  background: var(--accent-light);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: all 0.2s ease;
+  color: var(--text-primary);
+}
+
+.tense-guide-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.tense-guide-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.tense-guide-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.tense-guide-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.tense-guide-arrow {
+  margin-left: auto;
+  color: var(--accent);
+  flex-shrink: 0;
+}

@@ -13,7 +13,7 @@ export default function TenseDetail() {
   const prev = allTenses[idx - 1];
   const next = allTenses[idx + 1];
 
-  if (!tense) {
+  if (!tense && !detail) {
     return (
       <main className="td-page">
         <Link to="/tenses" className="td-back">
@@ -31,8 +31,8 @@ export default function TenseDetail() {
       </Link>
 
       <div className="td-hero">
-        <span className="td-category">{tense.category}</span>
-        <h1 className="td-title">{tense.title}</h1>
+        {tense && <span className="td-category">{tense.category}</span>}
+        <h1 className="td-title">{tense ? tense.title : 'How to Choose the Right Tense'}</h1>
       </div>
 
       {detail ? (
@@ -87,27 +87,29 @@ export default function TenseDetail() {
         </div>
       )}
 
-      <div className="td-nav">
-        {prev ? (
-          <Link to={`/tenses/${prev.id}`} className="td-nav-btn td-nav-prev">
-            <ArrowLeft size={15} />
-            <div>
-              <span className="td-nav-label">Previous</span>
-              <span className="td-nav-word">{prev.title}</span>
-            </div>
-          </Link>
-        ) : <div />}
+      {tense && (
+        <div className="td-nav">
+          {prev ? (
+            <Link to={`/tenses/${prev.id}`} className="td-nav-btn td-nav-prev">
+              <ArrowLeft size={15} />
+              <div>
+                <span className="td-nav-label">Previous</span>
+                <span className="td-nav-word">{prev.title}</span>
+              </div>
+            </Link>
+          ) : <div />}
 
-        {next && (
-          <Link to={`/tenses/${next.id}`} className="td-nav-btn td-nav-next">
-            <div>
-              <span className="td-nav-label">Next</span>
-              <span className="td-nav-word">{next.title}</span>
-            </div>
-            <ArrowRight size={15} />
-          </Link>
-        )}
-      </div>
+          {next && (
+            <Link to={`/tenses/${next.id}`} className="td-nav-btn td-nav-next">
+              <div>
+                <span className="td-nav-label">Next</span>
+                <span className="td-nav-word">{next.title}</span>
+              </div>
+              <ArrowRight size={15} />
+            </Link>
+          )}
+        </div>
+      )}
     </main>
   );
 }

@@ -34,6 +34,15 @@ export default function Tenses() {
           </div>
         ))}
       </div>
+
+      <Link to="/tenses/how-to-choose" className="tense-guide-card">
+        <span className="tense-guide-icon">💡</span>
+        <div>
+          <h2 className="tense-guide-title">How to Choose the Right Tense</h2>
+          <p className="tense-guide-desc">A quick reference guide comparing all 12 tenses — with a British English focus.</p>
+        </div>
+        <ChevronRight size={18} className="tense-guide-arrow" />
+      </Link>
     </main>
   );
 }
