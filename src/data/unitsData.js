@@ -1,4 +1,5 @@
 import unit01 from './units/unit01';
+import unit02 from './units/unit02';
 
 // ============================================================
 // UNITS — INDEX
@@ -19,5 +20,12 @@ export const units = [
     title: 'Unit 1: am / is / are',
     subtitle: 'The verb BE in the Present Simple',
     detail: unit01,
+  },
+  {
+    id: 'unit02',
+    number: 2,
+    title: 'Unit 2: am / is / are (questions)',
+    subtitle: 'Forming questions and short answers with BE',
+    detail: unit02,
   },
 ];

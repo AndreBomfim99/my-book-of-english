@@ -5,10 +5,10 @@ const unit01 = {
 
     <h4>Positive</h4>
     <ul>
-      <li><em>She is a surgeon at a large hospital in London.</em></li>
-      <li><em>I am an engineer. My colleague is an architect.</em></li>
-      <li><em>They are experienced lawyers. Their fees are very high.</em></li>
-      <li><em>He is a journalist. He's interested in international politics.</em></li>
+      <li><em>She is a surgeon at a large hospital in London.</em> (Ela é cirurgiã num grande hospital em Londres.)</li>
+      <li><em>I am an engineer. My colleague is an architect.</em> (Sou engenheiro. O meu colega é arquiteto.)</li>
+      <li><em>They are experienced lawyers. Their fees are very high.</em> (Eles são advogados experientes. Os honorários deles são muito altos.)</li>
+      <li><em>He is a journalist. He's interested in international politics.</em> (Ele é jornalista. Ele tem interesse em política internacional.)</li>
     </ul>
 
     <h4>Negative</h4>
@@ -363,6 +363,21 @@ const unit01 = {
       <li><em>The show is funny, but the second series isn't as good.</em> (O programa é engraçado, mas a segunda série não é tão boa.)</li>
     </ul>
   `,
+
+  extra: [
+    {
+      title: 'See Also',
+      content: `
+        <p>Related units you may find useful:</p>
+        <ul>
+          <li><a href="/units/unit02">Unit 2: am / is / are (questions)</a></li>
+          <li><a href="/units/unit34">Unit 34: there is / are</a></li>
+          <li><a href="/units/unit65">Unit 65: a / an</a></li>
+          <li><a href="/units/appendix4">Appendix 4: short forms</a></li>
+        </ul>
+      `,
+    },
+  ],
 
 };
 
