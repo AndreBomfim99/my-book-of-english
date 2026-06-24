@@ -1,5 +1,6 @@
 import unit01 from './units/unit01';
 import unit02 from './units/unit02';
+import unit03 from './units/unit03';
 
 // ============================================================
 // UNITS — INDEX
@@ -27,5 +28,12 @@ export const units = [
     title: 'Unit 2: am / is / are (questions)',
     subtitle: 'Forming questions and short answers with BE',
     detail: unit02,
+  },
+  {
+    id: 'unit03',
+    number: 3,
+    title: 'Unit 3: am/is/are + -ing',
+    subtitle: 'Something is happening now — Present Continuous',
+    detail: unit03,
   },
 ];
