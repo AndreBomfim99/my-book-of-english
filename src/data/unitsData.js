@@ -1,6 +1,7 @@
 import unit01 from './units/unit01';
 import unit02 from './units/unit02';
 import unit03 from './units/unit03';
+import unit04 from './units/unit04';
 
 // ============================================================
 // UNITS — INDEX
@@ -36,4 +37,11 @@ export const units = [
     subtitle: 'Something is happening now — Present Continuous',
     detail: unit03,
   },
+  {
+  id: 'unit04',
+  number: 4,
+  title: 'Unit 4: are you doing? (questions)',
+  subtitle: 'Present Continuous questions and short answers',
+  detail: unit04,
+ },
 ];
